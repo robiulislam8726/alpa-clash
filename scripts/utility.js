@@ -11,9 +11,10 @@ function setBackgroundColorById(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('bg-yellow-400');
 }
-
-
-
+function removeBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-yellow-400');
+}
 function getARandomAlphabet(){
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
     const alphabets = alphabetString.split('');
