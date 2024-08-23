@@ -28,7 +28,7 @@
                 <!--screen -->
                 <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
                     <div class="flex justify-center ">
-                        <p class="bg-[#2F2941] px-6 pb-4 rounded-b-xl text-white">Don't watch keyboard  while playing.....</p>
+                        <p class="bg-[#2F2941] px-6 pb-4 rounded-b-xl text-white">Don't watch keyboard  while playing..... <strong style="color: brown;">Esc</strong>  for cancel</p>
                     </div>
                     <div class="flex justify-center items-center h-full">
                         <p id="current-alphabet" class="text-black text-9xl font-bold uppercase">Y</p>
@@ -76,7 +76,7 @@
                     <button class="btn rounded-full bg-purple-500 text-white px-4">
                         Life
                         <img src="images/heart.svg" alt="">
-                        <span>1</span>
+                        <span id="current-life">5</span>
                     </button>
                     <button class="btn rounded-full bg-purple-700 text-white px-4">
                         score
@@ -89,13 +89,14 @@
         </section>
         <!--Play Ground End-->
         <!--Scour section Start-->
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="final-score" class=" flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-6 rounded-lg">
+                <h4 class="text-3xl">Game Over !</h4>
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score:</span>
-                    <span class="font-semibold">14</span>
+                    <span id="last-score" class="font-semibold">14</span>
                 </h1>
-                <button class="btn">Play Again</button>
+                <button onclick="play()" class="btn">Play Again</button>
                 <p>Practice will make you a Pro</p>
             </div>
         </section>
